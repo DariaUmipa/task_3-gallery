@@ -1,0 +1,42 @@
+img{
+    margin-left: 20rem;
+    width: 30rem;
+    height: 30rem;
+    
+}
+
+h1{
+    background-color: aqua;
+    color: rgb(148, 99, 194);
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.button1{
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    color: blueviolet;
+    border-color: blueviolet;
+    font-weight: 600;
+}
+
+
+.button2{
+    width: 200px;
+    margin-left: 500px;
+    margin-top: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    color: blueviolet;
+    border-color:blueviolet;
+    height:20px;
+    font-weight: 600;
+}

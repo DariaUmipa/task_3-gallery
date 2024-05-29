@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <main>
+        <div id="gallery" class="conteiner">
+
+         <img src="./assets/img1.jpg" alt="flowers" id = "galleryImage"/>
+        <div class="buttons">
+            <button  class="button1"  onclick="click2()"    id="prevButton">Назад</button>
+            <button class="button2"   onclick="clicknext()" id="nextButton">Вперёд</button>
+        </div>
+    </div>
+    </main>
+    <script>
+        const image1 = "./assets/img1.jpg";
+        const image2 = "./assets/img2.jpg";
+        const galleryImage = document.getElementById("galleryImage");
+        const prevButton = document.getElementById("prevButton");
+        const nextButton = document.getElementById("nextButton");
+
+        let currentImage = image1;
+
+        function changeImage(image){
+            galleryImage.src = image;
+
+        }
+        nextButton.addEventListener("click", () => {
+            currentImage = image2;
+            changeImage(currentImage);
+        });
+
+        prevButton.addEventListener("click", () => {
+            currentImage = image1;
+            changeImage(currentImage);
+        });
+
+    </script>
+</body>
+</html>
